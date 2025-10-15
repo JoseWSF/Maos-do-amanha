@@ -133,6 +133,7 @@ button {
   transition: background 0.2s;
 }
 
+/* === Acessibilidade e contraste aprimorado === */
 button:hover {
   background: #002244;
 }
@@ -241,5 +242,6 @@ label.inline {
     width: 90%;
   }
 }
+
 
 
