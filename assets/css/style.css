@@ -52,6 +52,12 @@ nav a {
   transition: color 0.2s;
 }
 
+a:focus, button:focus, input:focus {
+  outline: 3px solid #036;
+  outline-offset: 2px;
+}
+
+
 nav a:hover {
   color: #002244;
 }
@@ -212,3 +218,4 @@ label.inline {
     width: 90%;
   }
 }
+
