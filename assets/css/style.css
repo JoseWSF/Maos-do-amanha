@@ -3,6 +3,7 @@
   --max: 1000px;
   --gap: 16px;
   --cor-principal: #003366;
+  --cor-hover: #002244;
   --fundo-claro: #eaf2f8;
   --fundo-artigo: #f9f9f9;
 }
@@ -15,13 +16,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* === BASE === */
 body {
   background-color: #fff;
-  color: #333;
+  color: #222;
   line-height: 1.6;
 }
 
-/* === CONTAINER CENTRAL === */
 .container {
   max-width: var(--max);
   margin: 0 auto;
@@ -52,14 +53,15 @@ nav a {
   transition: color 0.2s;
 }
 
-a:focus, button:focus, input:focus {
-  outline: 3px solid #036;
-  outline-offset: 2px;
+nav a:hover {
+  color: var(--cor-hover);
 }
 
-
-nav a:hover {
-  color: #002244;
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid var(--cor-principal);
+  outline-offset: 2px;
 }
 
 /* === TÍTULOS E TEXTOS === */
@@ -123,6 +125,7 @@ button {
   margin-top: 4px;
 }
 
+/* === BOTÕES === */
 button {
   background: var(--cor-principal);
   color: #fff;
@@ -133,33 +136,18 @@ button {
   transition: background 0.2s;
 }
 
-/* === Acessibilidade e contraste aprimorado === */
 button:hover {
-  background: #002244;
+  background: var(--cor-hover);
 }
 
-body {
-  background-color: #fff;
-  color: #222;
-}
-
-button {
-  background: #036;
-  color: #fff;
-}
-
-button:hover {
-  background: #024;
-}
-
+/* === LINKS === */
 a {
-  color: #036;
+  color: var(--cor-principal);
 }
 
 a:hover {
-  color: #024;
+  color: var(--cor-hover);
 }
-
 
 /* === FIELDSET E LEGEND === */
 fieldset {
@@ -173,7 +161,7 @@ legend {
   font-weight: bold;
 }
 
-/* === ALINHAMENTO DE CHECKBOX E RADIO === */
+/* === CHECKBOX E RADIO === */
 input[type="checkbox"],
 input[type="radio"] {
   width: auto;
@@ -242,6 +230,3 @@ label.inline {
     width: 90%;
   }
 }
-
-
-
