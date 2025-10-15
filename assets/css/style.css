@@ -137,6 +137,29 @@ button:hover {
   background: #002244;
 }
 
+body {
+  background-color: #fff;
+  color: #222;
+}
+
+button {
+  background: #036;
+  color: #fff;
+}
+
+button:hover {
+  background: #024;
+}
+
+a {
+  color: #036;
+}
+
+a:hover {
+  color: #024;
+}
+
+
 /* === FIELDSET E LEGEND === */
 fieldset {
   border: 1px solid #ddd;
@@ -218,4 +241,5 @@ label.inline {
     width: 90%;
   }
 }
+
 
