@@ -1,171 +1,232 @@
 /* === VARIÁVEIS GLOBAIS === */
 :root {
---max: 1000px;
---gap: 16px;
---cor-principal: #003366;
---fundo-claro: #eaf2f8;
---fundo-artigo: #f9f9f9;
+  --max: 1000px;
+  --gap: 16px;
+  --cor-principal: #003366;
+  --cor-hover: #002244;
+  --fundo-claro: #eaf2f8;
+  --fundo-artigo: #f9f9f9;
 }
 
 /* === RESET BÁSICO === */
 * {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* === BASE === */
 body {
-background-color: #fff;
-color: #222;
-line-height: 1.6;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
 }
 
-/* === CONTAINER CENTRAL === */
 .container {
-max-width: var(--max);
-margin: 0 auto;
-padding: 20px;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* === CABEÇALHO E RODAPÉ === */
 header,
 footer {
-/* === CABEÇALHO === */
-header {
-background-color: var(--fundo-claro);
-text-align: center;
-padding: 20px 0;
+  background-color: var(--fundo-claro);
+  text-align: center;
+  padding: 20px 0;
 }
 
-/* Cabeçalho aprimorado */
-header h1 {
-font-size: 2rem;
-margin-bottom: 6px;
-@@ -61,13 +59,10 @@
-text-decoration: none;
-font-weight: bold;
-position: relative;
+/* === NAVEGAÇÃO === */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap);
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav a {
+  color: var(--cor-principal);
+  text-decoration: none;
+  font-weight: bold;
   transition: color 0.2s;
 }
 
 nav a:hover {
-  color: #002244;
-  transition: color 0.3s;
+  color: var(--cor-hover);
 }
 
-/* Efeito animado no hover */
-nav a::after {
-content: "";
-position: absolute;
-@@ -83,12 +78,20 @@
-width: 100%;
-}
-
-/* === ACESSIBILIDADE === */
-a:focus, button:focus, input:focus {
-  outline: 3px solid #036;
+a:focus,
+button:focus,
+input:focus {
   outline: 3px solid var(--cor-principal);
-outline-offset: 2px;
-}
-
-/* === RODAPÉ === */
-footer {
-  background-color: var(--fundo-claro);
-  text-align: center;
-  padding: 16px 0;
-  color: #333;
-  font-size: 0.9rem;
+  outline-offset: 2px;
 }
 
 /* === TÍTULOS E TEXTOS === */
 h1, h2, h3 {
-margin: 10px 0;
-@@ -161,7 +164,15 @@
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* === SEÇÕES PRINCIPAIS === */
+main section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* === ARTIGOS DE PROJETOS === */
+article {
+  background-color: var(--fundo-artigo);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  text-align: center;
+}
+
+/* === FIGURAS E IMAGENS === */
+figure {
+  margin: 20px auto;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+figcaption {
+  margin-top: 5px;
+  font-style: italic;
+  color: #555;
+}
+
+/* === FORMULÁRIOS === */
+label {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  max-width: 480px;
+  padding: 8px;
+  margin-top: 4px;
+}
+
+/* === BOTÕES === */
+button {
+  background: var(--cor-principal);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
 button:hover {
-  background: #024;
-  background: #002244;
+  background: var(--cor-hover);
 }
 
+/* === LINKS === */
 a {
   color: var(--cor-principal);
 }
 
 a:hover {
-  color: #024;
+  color: var(--cor-hover);
 }
 
 /* === FIELDSET E LEGEND === */
-@@ -203,68 +214,54 @@
-margin-bottom: 6px;
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 12px;
 }
 
-/* === BLOCKQUOTE (FRASE FINAL MOTIVADORA) === */
-/* === BLOCO DE FRASE MOTIVADORA === */
-blockquote {
-font-style: italic;
-color: #555;
-border-left: 4px solid var(--cor-principal);
-padding-left: 12px;
-margin: 20px auto;
-width: 80%;
-  text-align: left;
+legend {
+  font-weight: bold;
 }
 
-/* === RODAPÉ === */
-footer {
-  background: var(--fundo-claro);
-  color: #333;
-  font-size: 0.9rem;
-  padding: 16px 0;
+/* === CHECKBOX E RADIO === */
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+label.inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+/* === LISTA DE IMPACTO (NOSSOS NÚMEROS) === */
+#impacto ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#impacto li {
+  margin-bottom: 6px;
 }
 
 /* === RESPONSIVIDADE (MOBILE-FIRST) === */
 
 /* Smartphones até 600px */
 @media (max-width: 600px) {
-nav ul {
-flex-direction: column;
-align-items: center;
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
   }
 
-  nav li {
-    margin-bottom: 8px;
-    gap: 8px;
-}
+  header h1 {
+    font-size: 1.5rem;
+  }
 
-header h1 {
-font-size: 1.5rem;
-}
+  .container {
+    padding: 12px;
+  }
 
-.container {
-padding: 12px;
-}
+  article {
+    width: 100%;
+    padding: 12px;
+  }
 
-article {
-width: 100%;
-padding: 12px;
-}
+  img {
+    width: 100%;
+    height: auto;
+  }
 
-img {
-width: 100%;
-height: auto;
-}
-
-form {
-padding: 10px;
-}
+  form {
+    padding: 10px;
+  }
 }
 
 /* Tablets entre 601px e 900px */
 @media (min-width: 601px) and (max-width: 900px) {
-.container {
-max-width: 700px;
-}
+  .container {
+    max-width: 700px;
+  }
 
-article {
-width: 90%;
-}
+  article {
+    width: 90%;
+  }
 }
