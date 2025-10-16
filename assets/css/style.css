@@ -28,15 +28,13 @@ body {
   padding: 20px;
 }
 
-/* === CABEÇALHO E RODAPÉ === */
-header,
-footer {
+/* === CABEÇALHO === */
+header {
   background-color: var(--fundo-claro);
   text-align: center;
   padding: 20px 0;
 }
 
-/* Cabeçalho aprimorado */
 header h1 {
   font-size: 2rem;
   margin-bottom: 6px;
@@ -61,13 +59,10 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   position: relative;
-  transition: color 0.2s;
+  transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #002244;
-}
-
+/* Efeito animado no hover */
 nav a::after {
   content: "";
   position: absolute;
@@ -83,10 +78,18 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* === ACESSIBILIDADE === */
 a:focus, button:focus, input:focus {
-  outline: 3px solid #036;
+  outline: 3px solid var(--cor-principal);
   outline-offset: 2px;
+}
+
+/* === RODAPÉ === */
+footer {
+  background-color: var(--fundo-claro);
+  text-align: center;
+  padding: 16px 0;
+  color: #333;
+  font-size: 0.9rem;
 }
 
 /* === TÍTULOS E TEXTOS === */
@@ -161,7 +164,15 @@ button {
 }
 
 button:hover {
-  background: #024;
+  background: #002244;
+}
+
+a {
+  color: var(--cor-principal);
+}
+
+a:hover {
+  color: #024;
 }
 
 /* === FIELDSET E LEGEND === */
@@ -203,7 +214,7 @@ label.inline {
   margin-bottom: 6px;
 }
 
-/* === BLOCKQUOTE (FRASE FINAL MOTIVADORA) === */
+/* === BLOCO DE FRASE MOTIVADORA === */
 blockquote {
   font-style: italic;
   color: #555;
@@ -211,28 +222,14 @@ blockquote {
   padding-left: 12px;
   margin: 20px auto;
   width: 80%;
-  text-align: left;
-}
-
-/* === RODAPÉ === */
-footer {
-  background: var(--fundo-claro);
-  color: #333;
-  font-size: 0.9rem;
-  padding: 16px 0;
 }
 
 /* === RESPONSIVIDADE (MOBILE-FIRST) === */
-
-/* Smartphones até 600px */
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
     align-items: center;
-  }
-
-  nav li {
-    margin-bottom: 8px;
+    gap: 8px;
   }
 
   header h1 {
