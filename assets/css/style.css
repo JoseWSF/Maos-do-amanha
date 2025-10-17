@@ -52,6 +52,11 @@ nav a {
   transition: color 0.2s;
 }
 
+a:focus, button:focus, input:focus {
+  outline: 3px solid #036;
+  outline-offset: 2px;
+}
+
 nav a:hover {
   color: #002244;
 }
@@ -127,8 +132,31 @@ button {
   transition: background 0.2s;
 }
 
+/* === Acessibilidade e contraste aprimorado === */
 button:hover {
   background: #002244;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+}
+
+button {
+  background: #036;
+  color: #fff;
+}
+
+button:hover {
+  background: #024;
+}
+
+a {
+  color: #036;
+}
+
+a:hover {
+  color: #024;
 }
 
 /* === FIELDSET E LEGEND === */
@@ -169,10 +197,69 @@ label.inline {
 #impacto li {
   margin-bottom: 6px;
 }
+
+/* === MOLDURA SUAVE PARA IMAGENS === */
+#sobre img,
+#missao img,
+#historico img,
+#transparencia img,
+article img {
+  border: 2px solid rgba(240, 240, 240, 0.8); /* moldura bem clarinha */
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08); /* sombra leve e suave */
+  display: block;
+  margin: 20px auto;
+  background-color: #fff; /* realça o contorno em telas claras */
+}
+
+
+/* === RESPONSIVIDADE (MOBILE-FIRST) === */
+
+/* Smartphones até 600px */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 12px;
+  }
+
+  article {
+    width: 100%;
+    padding: 12px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    padding: 10px;
+  }
+}
+
+/* Tablets entre 601px e 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  .container {
+    max-width: 700px;
+  }
+
+  article {
+    width: 90%;
+  }
+}
+
 /* === Correção: remove os pontos das listas e centraliza === */
 ul {
-  list-style: none;      
-  padding-left: 0;       
+  list-style: none;      /* remove as bolinhas pretas */
+  padding-left: 0;       /* remove recuo padrão */
   margin: 0 auto;
   text-align: center;
 }
