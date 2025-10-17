@@ -3,7 +3,6 @@
   --max: 1000px;
   --gap: 16px;
   --cor-principal: #003366;
-  --cor-hover: #002244;
   --fundo-claro: #eaf2f8;
   --fundo-artigo: #f9f9f9;
 }
@@ -16,13 +15,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* === BASE === */
 body {
   background-color: #fff;
-  color: #222;
+  color: #333;
   line-height: 1.6;
 }
 
+/* === CONTAINER CENTRAL === */
 .container {
   max-width: var(--max);
   margin: 0 auto;
@@ -54,14 +53,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--cor-hover);
-}
-
-a:focus,
-button:focus,
-input:focus {
-  outline: 3px solid var(--cor-principal);
-  outline-offset: 2px;
+  color: #002244;
 }
 
 /* === TÍTULOS E TEXTOS === */
@@ -125,7 +117,6 @@ button {
   margin-top: 4px;
 }
 
-/* === BOTÕES === */
 button {
   background: var(--cor-principal);
   color: #fff;
@@ -137,16 +128,7 @@ button {
 }
 
 button:hover {
-  background: var(--cor-hover);
-}
-
-/* === LINKS === */
-a {
-  color: var(--cor-principal);
-}
-
-a:hover {
-  color: var(--cor-hover);
+  background: #002244;
 }
 
 /* === FIELDSET E LEGEND === */
@@ -161,7 +143,7 @@ legend {
   font-weight: bold;
 }
 
-/* === CHECKBOX E RADIO === */
+/* === ALINHAMENTO DE CHECKBOX E RADIO === */
 input[type="checkbox"],
 input[type="radio"] {
   width: auto;
@@ -187,46 +169,14 @@ label.inline {
 #impacto li {
   margin-bottom: 6px;
 }
-
-/* === RESPONSIVIDADE (MOBILE-FIRST) === */
-
-/* Smartphones até 600px */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  .container {
-    padding: 12px;
-  }
-
-  article {
-    width: 100%;
-    padding: 12px;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  form {
-    padding: 10px;
-  }
+/* === Correção: remove os pontos das listas e centraliza === */
+ul {
+  list-style: none;      
+  padding-left: 0;       
+  margin: 0 auto;
+  text-align: center;
 }
 
-/* Tablets entre 601px e 900px */
-@media (min-width: 601px) and (max-width: 900px) {
-  .container {
-    max-width: 700px;
-  }
-
-  article {
-    width: 90%;
-  }
+ul li {
+  margin-bottom: 6px;    /* espaço entre os itens */
 }
