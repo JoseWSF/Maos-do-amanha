@@ -1,4 +1,5 @@
 Mãos do Amanhã (Projeto acadêmico)
+
 💡 Sobre o Projeto
 
 Mãos do Amanhã é uma plataforma web desenvolvida com o objetivo de oferecer às ONGs uma presença digital acessível, moderna e funcional.
