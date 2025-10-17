@@ -1,0 +1,52 @@
+Mãos do Amanhã (Projeto acadêmico)
+💡 Sobre o Projeto
+
+Mãos do Amanhã é uma plataforma web desenvolvida com o objetivo de oferecer às ONGs uma presença digital acessível, moderna e funcional.
+O site foi criado como parte de um projeto acadêmico, aplicando conceitos de HTML5, CSS3 e JavaScript, com foco em responsividade, acessibilidade e boas práticas de desenvolvimento.
+
+🎯 Objetivos
+
+Apresentar a missão, visão e valores da ONG;
+
+Divulgar projetos sociais e oportunidades de voluntariado;
+
+Permitir o cadastro de voluntários e doadores;
+
+Garantir uma navegação clara, intuitiva e responsiva.
+
+🧩 Tecnologias Utilizadas
+
+HTML5 — estrutura semântica e acessível
+
+CSS3 — design responsivo e harmonia visual
+
+JavaScript — validação e máscaras de formulários
+
+GitHub Pages — hospedagem gratuita do site
+
+🧱 Estrutura de Pastas
+Projeto/
+│
+├── index.html            → Página inicial
+├── projetos.html         → Página de projetos sociais
+├── cadastro.html         → Página de cadastro de voluntários/doadores
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css     → Estilos gerais do site
+│   └── img/              → Imagens utilizadas
+│
+└── js/
+    └── masks.js          → Máscaras e validações de formulário
+
+🌐 Acesse o Site
+
+🔗 Mãos do Amanhã — Página Oficial
+
+O projeto segue princípios básicos de acessibilidade (WCAG 2.1 AA) e design mobile-first, garantindo boa experiência de navegação em celulares, tablets e desktops.
+
+👨‍💻 Desenvolvido por
+
+José Ferreira
+Projeto acadêmico — Desenvolvimento Web Front-End
+2025
