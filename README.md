@@ -24,24 +24,6 @@ JavaScript — validação e máscaras de formulários
 
 GitHub Pages — hospedagem gratuita do site
 
-🧱 Estrutura de Pastas
-Projeto/
-│
-├── index.html            → Página inicial
-├── projetos.html         → Página de projetos sociais
-├── cadastro.html         → Página de cadastro de voluntários/doadores
-│
-├── assets/
-│   ├── css/
-│   │   └── style.css     → Estilos gerais do site
-│   └── img/              → Imagens utilizadas
-│
-└── js/
-    └── masks.js          → Máscaras e validações de formulário
-
-🌐 Acesse o Site
-
-🔗 Mãos do Amanhã — Página Oficial
 
 O projeto segue princípios básicos de acessibilidade (WCAG 2.1 AA) e design mobile-first, garantindo boa experiência de navegação em celulares, tablets e desktops.
 
