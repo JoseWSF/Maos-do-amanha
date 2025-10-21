@@ -17,13 +17,21 @@
     <div class="container">
       <h1>Mãos do Amanhã</h1>
       <p class="tagline">Transformando vidas com tecnologia e solidariedade</p>
-      <nav aria-label="Menu principal">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html">Cadastro</a></li>
-        </ul>
-      </nav>
+      <nav aria-label="Menu principal" id="menu-principal">
+  <button class="menu-toggle" aria-label="Abrir menu">☰ Menu</button>
+  <ul>
+    <li><a href="index.html">Início</a></li>
+    <li class="has-submenu">
+      <a href="projetos.html" aria-haspopup="true" aria-expanded="false">Projetos ▾</a>
+      <ul class="submenu">
+        <li><a href="projetos.html#educacao">Educação</a></li>
+        <li><a href="projetos.html#sustentabilidade">Sustentabilidade</a></li>
+        <li><a href="projetos.html#inclusao">Inclusão Digital</a></li>
+      </ul>
+    </li>
+    <li><a href="cadastro.html">Cadastro</a></li>
+  </ul>
+</nav>
     </div>
   </header>
 
@@ -33,6 +41,7 @@
         <h2 id="sobre-titulo">Quem somos</h2>
         <p>Somos uma organização sem fins lucrativos dedicada a transformar vidas por meio da educação e da tecnologia.</p>
         <img src="assets/img/logo-ong.webp" alt="Equipe da ONG em ação" width="800" height="450">
+        <figcaption>Mãos do Amanhã.</figcaption>
       </div>
     </section>
 
@@ -64,6 +73,7 @@
         <h2>Relatórios de Transparência</h2>
         <p>Acreditamos que a confiança nasce da transparência. Confira nossos relatórios financeiros e de impacto social.</p>
         <ul>
+          <ul role="list"></ul>
           <li><a href="#">Relatório Anual 2024 (PDF)</a></li>
           <li><a href="#">Prestação de Contas - Projetos de Educação</a></li>
         </ul>
@@ -92,5 +102,6 @@
   <script>
     document.getElementById('ano').textContent = new Date().getFullYear();
   </script>
+  <script src="js/menu.js"></script>
 </body>
 </html>
