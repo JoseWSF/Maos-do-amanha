@@ -1,4 +1,4 @@
-Mãos do Amanhã (Projeto acadêmico)
+Mãos do Amanhã (Projeto acadêmico) - Entrega I
 
 💡 Sobre o Projeto
 
@@ -29,6 +29,43 @@ Acesse o site
 https://josewsf.github.io/Maos-do-amanha/
 
 O projeto segue princípios básicos de acessibilidade (WCAG 2.1 AA) e design mobile-first, garantindo boa experiência de navegação em celulares, tablets e desktops.
+
+
+------------//-------------//------------//-------------//------------//-------------//------------//-------------//------------//-------------
+
+ATUALIZAÇÃO
+
+Mãos do Amanhã — Entrega II (CSS3 e Interface Responsiva)
+📘 Descrição
+
+Segunda etapa do projeto Mãos do Amanhã, com foco na aplicação de CSS3, responsividade e interatividade com JavaScript.
+Esta versão aprimora a estrutura HTML da Entrega I, criando uma interface moderna, acessível e funcional.
+
+🎯 Objetivos
+
+Implementar design system com variáveis CSS.
+
+Aplicar Grid e Flexbox para layouts responsivos.
+
+Adicionar submenu dropdown e menu hambúrguer.
+
+Criar componentes visuais e formulário com máscaras.
+
+Garantir acessibilidade e boa experiência do usuário.
+
+Estrutura das pastas
+Manteve a mesma estrutura das pastas e subpastas, mas com acrescimo 
+de arquivos .CSS e .JS e atualizações dos arquivos HTML.
+
+variables.css   → Design System (cores, tipografia, espaçamento)
+layout.css      → Estrutura de layout, grid e responsividade
+components.css  → Botões, cards, alerts, modais, badges
+
+menu.js         → Controle do menu responsivo e submenu dropdown
+
+
+---------------------//----------------------
+
 
 👨‍💻 Desenvolvido por
 
