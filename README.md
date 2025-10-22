@@ -31,7 +31,7 @@ https://josewsf.github.io/Maos-do-amanha/
 O projeto segue princípios básicos de acessibilidade (WCAG 2.1 AA) e design mobile-first, garantindo boa experiência de navegação em celulares, tablets e desktops.
 
 
-------------//-------------//------------//-------------//------------//-------------//------------//-------------//------------//-------------
+------------//-------------//------------//-------------//------------//-------------//------------//-------------
 
 ATUALIZAÇÃO
 
