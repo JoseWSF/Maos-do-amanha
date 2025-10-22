@@ -58,7 +58,9 @@ Manteve a mesma estrutura das pastas e subpastas, mas com acrescimo
 de arquivos .CSS e .JS e atualizações dos arquivos HTML.
 
 variables.css   → Design System (cores, tipografia, espaçamento)
+
 layout.css      → Estrutura de layout, grid e responsividade
+
 components.css  → Botões, cards, alerts, modais, badges
 
 menu.js         → Controle do menu responsivo e submenu dropdown
