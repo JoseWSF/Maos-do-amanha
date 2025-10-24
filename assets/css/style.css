@@ -191,7 +191,7 @@ label.inline {
   margin-top: 8px;
 }
 
-/* === LISTA DE IMPACTO (NOSSOS NÚMEROS) === */
+/* === LISTA DE IMPACTO === */
 #impacto ul {
   list-style: none;
   padding-left: 0;
@@ -209,18 +209,18 @@ label.inline {
 #historico img,
 #transparencia img,
 article img {
-  border: 2px solid rgba(240, 240, 240, 0.8); /* moldura bem clarinha */
+  border: 2px solid rgba(240, 240, 240, 0.8); 
   border-radius: 10px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08); /* sombra leve e suave */
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
   display: block;
   margin: 20px auto;
-  background-color: #fff; /* realça o contorno em telas claras */
+  background-color: #fff;
 }
 
 
 /* === RESPONSIVIDADE (MOBILE-FIRST) === */
 
-/* Smartphones até 600px */
+/* Smartphones */
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
@@ -333,3 +333,48 @@ nav ul li:hover > ul.submenu {
   }
 }
 
+/* === MENU HAMBÚRGUER === */
+
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--cor-principal, #333);
+  margin: 10px auto;
+}
+
+/* O menu começa escondido */
+nav ul {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--fundo-claro, #f9f9f9);
+  padding: 12px;
+  border-radius: 8px;
+  list-style: none;
+}
+
+/* ativa o menu */
+nav.ativo ul {
+  display: flex;
+}
+
+/* SUBMENU */
+.has-submenu > .submenu {
+  display: none;
+  flex-direction: column;
+  padding-left: 16px;
+}
+
+.has-submenu.open > .submenu {
+  display: flex;
+}
+
+@media (min-width: 769px) {
+  nav ul {
+    align-items: center;
+  }
+}
