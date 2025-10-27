@@ -71,7 +71,7 @@ menu.js         → Controle do menu responsivo e submenu dropdown
 
 ⚙️ Funcionalidades Implementadas
 
- Funcionalidade | Descrição |
+ 
 
 SPA, Navegação dinâmica entre páginas sem recarregar. 
 
