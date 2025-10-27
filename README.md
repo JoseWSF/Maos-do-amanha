@@ -69,6 +69,8 @@ menu.js         → Controle do menu responsivo e submenu dropdown
 ------------//-------------//------------//-------------//------------//-------------//------------//-------------
 
 
+Entrega III – Interatividade e Funcionalidades
+
 ⚙️ Funcionalidades Implementadas
 
  
