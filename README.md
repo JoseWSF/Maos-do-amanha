@@ -66,6 +66,27 @@ components.css  → Botões, cards, alerts, modais, badges
 menu.js         → Controle do menu responsivo e submenu dropdown
 
 
+------------//-------------//------------//-------------//------------//-------------//------------//-------------
+
+
+⚙️ Funcionalidades Implementadas
+
+ Funcionalidade | Descrição |
+
+SPA, Navegação dinâmica entre páginas sem recarregar. 
+
+Validação de Formulário, Verificação de campos e alertas de preenchimento. 
+
+Máscaras de Entrada, CPF, telefone e CEP com formatação automática. 
+
+Menu Hambúrguer Responsivo,| Menu interativo com submenu e acessibilidade. 
+
+Feedback ao Usuário, Alertas visuais e mensagens de sucesso simuladas. 
+
+
+
+
+
 ---------------------//----------------------
 
 
